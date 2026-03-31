@@ -15,8 +15,8 @@ public class selflearning {
     }
 
     String a1 ="bus";
-    String a2 = "bus";
-    //String a2 = "train"
+    String a2 = "car";
+    String a3 = "train";
     
 
     if (a1.length()== a2.length()) {
@@ -26,7 +26,7 @@ public class selflearning {
     }else{
       System.out.println("the two word length is not same");
     }
-
+    
     
   }
 }

@@ -10,7 +10,7 @@ public class JavaExerise6 {
     for (int i = 0; i < 100; i++) {
       // code here ...
       //int index = 10;
-      if(i%2==0 && i %3==0 && count < 10){
+      if(i%2==0 && i %3==0 && count <=10){
         count++;
         System.out.println(i);
       } 

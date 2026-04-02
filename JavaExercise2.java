@@ -38,11 +38,11 @@ public class JavaExercise2 {
         char grade = 'B';
 
         // 根據 score 判斷等級
-        if (/* 填條件：score 90 或以上 */score>90||score==90) {
+        if (/* 填條件：score 90 或以上 */score>=90) {
             System.out.println("Excellent! You got A");
         } else if (/* 填條件：score 75 或以上，但未夠 90 */score>75 || score<90) {
             System.out.println("Good! You got B");
-        } else if (/* 填條件：score 60 或以上，但未夠 75 */score>60 || score<75) {
+        } else if (/* 填條件：score 60 或以上，但未夠 75 */score>=60 && score<75) {
             System.out.println("Pass! You got C");
         } else {
             System.out.println("Fail... You need to study harder");
@@ -51,9 +51,9 @@ public class JavaExercise2 {
         // ==================== Question 4: String equals ====================
         String language = "Java";
 
-        if (/* 填條件：language 係 "Java" */language == "Java") {
+        if (/* 填條件：language 係 "Java" */ /*language == "Java"*/"java".equals(language)) {
             System.out.println("We are learning the best programming language!");
-        } else if (/* 填條件：language 係 "Python" */ language== "python") {
+        } else if (/* 填條件：language 係 "Python" */  /*language== "python"*/ "python".equals(language)) {
             System.out.println("Python is also very popular.");
         } else {
             System.out.println("Other programming language.");

@@ -49,6 +49,17 @@ public class primitive {
     long l20 = 200L;
 
     char ch4 = '5';
+    //char +int ->int
+    System.out.println('a'+1);
+    char c10 = 'a';
+    char c11 = 'a'+1;
+    System.out.println(c11);
+    char c12 = 'a'+25;
+    System.out.println(c12);
+    char c13 ='a';
+    char c14 = 'b';
+
+    
 
   }
 }

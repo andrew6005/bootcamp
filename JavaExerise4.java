@@ -1,0 +1,98 @@
+import java.util.Scanner;
+
+public class JavaExerise4 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+        int number_Of_DaysInMonth = 0;
+        String monthOfName = "";
+
+        // Input month number
+        System.out.print("Input a month number: ");
+        int month = scanner.nextInt();
+
+        // Input year
+        System.out.print("Input a year: ");
+        int year = scanner.nextInt();
+
+        // Use switch to check the month
+        switch (month) {
+            case 1:
+                monthOfName = "January";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            case 2:
+                monthOfName = "February";
+
+                // Check leap year
+                if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+                    number_Of_DaysInMonth = 29;
+                } else {
+                    number_Of_DaysInMonth = 28;
+                }
+                break;
+
+            case 3:
+                monthOfName = "March";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            case 4:
+                monthOfName = "April";
+                number_Of_DaysInMonth = 30;
+                break;
+
+            case 5:
+                monthOfName = "May";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            case 6:
+                monthOfName = "June";
+                number_Of_DaysInMonth = 30;
+                break;
+
+            case 7:
+                monthOfName = "July";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            case 8:
+                monthOfName = "August";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            case 9:
+                monthOfName = "September";
+                number_Of_DaysInMonth = 30;
+                break;
+
+            case 10:
+                monthOfName = "October";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            case 11:
+                monthOfName = "November";
+                number_Of_DaysInMonth = 30;
+                break;
+
+            case 12:
+                monthOfName = "December";
+                number_Of_DaysInMonth = 31;
+                break;
+
+            default:
+                System.out.println("Invalid month number.");
+                scanner.close();
+                return;
+        }
+
+        // Display result
+        System.out.println(monthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
+
+        scanner.close();
+    
+  }
+}

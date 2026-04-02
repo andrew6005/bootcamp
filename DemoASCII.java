@@ -22,7 +22,16 @@ public class DemoASCII {
     char  c3 = 6500;
 
 
+    /*float f2 = 999.99f;
+    double d2 =f2;*/
+
+
+
+    double d1 = 999.99;
+    //float f1 = d1; // risky
+
     float f2 = 999.99f;
-    double d2 =f2;
+    double d2 = f2; // OK
+
   }
 }

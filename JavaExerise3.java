@@ -9,10 +9,10 @@ public class JavaExerise3 {
 
         if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-                ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'&& (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')) {
                 System.out.println(ch + " is a vowel.");
             } else if(ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u' &&
-                      ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U') {
+                      ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U'&& (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')) {
                 System.out.println(ch + " is a consonant.");
             }
         } else {
@@ -27,7 +27,7 @@ public class JavaExerise3 {
     // Experience ≥ 10 years → 20% bonus
     // 5–9 years → 10% bonus
     // < 5 years → 5% bonus
-    int exp = 12;
+    /*int exp = 12;
     int salary = 110_000;
 
     if (exp >= 10) {
@@ -36,6 +36,6 @@ public class JavaExerise3 {
         System.out.println("Bonus: " + (salary * 0.10));
     } else {
         System.out.println("Bonus: " + (salary * 0.05));
-    }
+    }*/
   }
 }

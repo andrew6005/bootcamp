@@ -27,7 +27,7 @@ public class JavaExerise3 {
     // Experience ≥ 10 years → 20% bonus
     // 5–9 years → 10% bonus
     // < 5 years → 5% bonus
-    /*int exp = 12;
+    int exp = 12;
     int salary = 110_000;
 
     if (exp >= 10) {
@@ -36,6 +36,6 @@ public class JavaExerise3 {
         System.out.println("Bonus: " + (salary * 0.10));
     } else {
         System.out.println("Bonus: " + (salary * 0.05));
-    }*/
+    }
   }
 }

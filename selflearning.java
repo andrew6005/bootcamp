@@ -35,6 +35,21 @@ public class selflearning {
       }
     }
     System.out.println("The sum is " + sum);
+
+    String d1 = "879434035";
+    int max = 0;
+
+    for (int i = 0; i < d1.length(); i++) {
+            int num = d1.charAt(i) - '0';   
+
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        System.out.println("Max number is: " + max);
+
+
     
   }
 }

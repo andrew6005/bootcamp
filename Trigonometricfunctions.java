@@ -1,7 +1,8 @@
 public class Trigonometricfunctions {
   private double Hypotenuse;
   private double Opposite;
-  private double Adjacent;  
+  private double Adjacent; 
+
   public double getHypotenuse(){
     return this.Hypotenuse;
   }
@@ -33,9 +34,9 @@ public class Trigonometricfunctions {
 
   public static void main(String[] args) {
     Trigonometricfunctions t1 = new Trigonometricfunctions();
-    t1.setHypotenuse(10.7);
-    t1.setOpposite(5.4);
-    t1.setAdjacent(8.2);
+    t1.setHypotenuse(15.7);
+    t1.setOpposite(35.4);
+    t1.setAdjacent(86.2);
 
     System.out.println(t1.sine());
     System.out.println(t1.cosine());

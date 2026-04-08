@@ -6,7 +6,7 @@ public class JavaExerise6 {
     // 2. Divisible by 3
     // 3. First ten numbers
     //int sum = 0;
-    int count = 0;
+    int count = 1;
     for (int i = 0; i < 100; i++) {
       // code here ...
       //int index = 10;

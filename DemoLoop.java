@@ -59,7 +59,7 @@ boolean islexist = false ;
     String d1max="";
     int max = Integer.MIN_VALUE;
     for(int i = 0;i<d1.length();i++){
-      if(d1.charAt(i)==){
+      //if(d1.charAt(i)==){
         System.out.println(i);
 
       }
@@ -70,7 +70,7 @@ boolean islexist = false ;
       
 
 
-    }
+    
     
 
 /*String d1 = "947852106";//find the lagest even digi
@@ -118,14 +118,20 @@ boolean islexist = false ;
 
 
       }
-      
     }
-    System.out.println(output);
-
- 
-
-
-
-
-  }
 }
+
+}
+
+      
+    
+   // System.out.println(output);
+
+
+
+
+
+
+
+  
+

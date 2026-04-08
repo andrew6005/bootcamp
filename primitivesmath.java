@@ -20,6 +20,7 @@ public class primitivesmath {
      System.out.println(average2);//93->93.0
 
     byte b2 = - 128;
+    System.out.println(b2-3);
 //()= I take my own risk
     b2=(byte) (b2 -3);
     System.out.println(b2);//125(over)

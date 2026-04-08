@@ -44,6 +44,7 @@ public class Person {
   }
   public double getWeight(){
     return this.weight;
+    
   }
   public void setWeight(double weight){
     this.weight = weight;
@@ -55,5 +56,8 @@ public class Person {
     p1.setWeight(70.5);
     System.out.println(p1.overweight());
     System.out.println(p1.bmigroup());
+
+
+
   }
 }

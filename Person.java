@@ -3,6 +3,33 @@ public class Person {
   private double height;
   private double weight;
 
+  //instance method
+  //presetation(APIE:encapsulation)
+  public boolean overweight(){
+    if(this.Bmi() > 25){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  public String bmigroup(){
+    if(this.Bmi() < 18.5){
+      return "underweight";
+    } else if(this.Bmi() >= 18.5 && this.Bmi() < 25){
+      return  "normal";
+    } else {
+      return "overweight";
+    } 
+  }
+
+
+
+ 
+
+  //bmi = weight/height^2
+  public double Bmi(){
+    return this.weight / (this.height * this.height);
+  }
   public String getName(){
     return this.name;
   }
@@ -22,6 +49,11 @@ public class Person {
     this.weight = weight;
   } 
   public static void main(String[] args) {
-    
+    Person p1 = new Person(); 
+    p1.setName("john");
+    p1.setHeight(1.75);
+    p1.setWeight(70.5);
+    System.out.println(p1.overweight());
+    System.out.println(p1.bmigroup());
   }
 }

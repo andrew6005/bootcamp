@@ -6,6 +6,7 @@ public class Car {
   private String color;
   private String brand;
   private String year;
+  private String model;
 
  
   public String getColor(){

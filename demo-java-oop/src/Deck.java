@@ -26,7 +26,7 @@ public static void main(String[] args) {
 
 
   }
-  //* class -> 5 cards Boolean
+  //* rule manager class -> 5 cards Boolean
 
 
 

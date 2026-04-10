@@ -24,4 +24,6 @@ public class week2Revision {
 //* equals,compareTo
 //* localDate
 
+//*  Examples :customer /Order/Item/person/ Circle
+
 }

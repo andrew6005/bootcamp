@@ -4,6 +4,7 @@ public class String1 {
   public int length(){
     return this.chs.length;
   }
+
   public char charAt(int index){
     return this.chs[index];
   }
@@ -30,6 +31,19 @@ public class String1 {
     }
     return idx;
   }
+  public String afterreplace(char from , char to){
+    String afterreplace = "";
+    for (int i =0; i<this.chs.length;i++){
+      if(chs[i] !=from){
+          afterreplace+=chs[i];
+
+      }else{
+        afterreplace+=0;
+      }
+
+    }
+    return afterreplace;
+  }
 
   public String replace(char from, char to){
    for(int i =0 ; i<this.chs.length;i++){
@@ -55,9 +69,11 @@ public class String1 {
 
     System.out.println(str.replace('l','x'));
     System.out.println(str.indexof('o'));
-    String s ="hello";
-    System.out.println(s.replace('l', 'x'));
-    System.err.println(s);
+    //String s ="hello";
+    System.out.println(str.afterreplace('l', 'x'));
+    //System.err.println(s.replace('h', 'e'));
+
+    
   }
 
   

@@ -9,7 +9,10 @@ public class Customer {
   private Order[] orders;
 
   public Customer() {
+    this.orders = new Order[0];
   }
+  
+
   public Customer(Order[] orders){
     this.orders = orders;
   }
@@ -43,6 +46,15 @@ public class Customer {
 
     return sum.doubleValue();
   }
+  public void addOrder(Order order){
+    Order[] newOrders =new Order[this.orders.length+1];
+    for(int i =0; i <this.orders.length;i++){
+      newOrders[i] =  this.orders[i];
+
+    }
+    newOrders[newOrders.length-1] = newOrders;
+    this.orders =newOrders;
+  }
 
   public int getBirthYear() {
     return this.dob.getYear();
@@ -60,11 +72,16 @@ public class Customer {
     this.orders = orders;
   }
 
+  
+
 
 
   public static void main(String[] args) {
+    Order order1 =new Order();
+    
     Customer c1 = new Customer();
-    Customer c2 = new Customer("john", "chan", 'M', LocalDate.of(1990, 1, 1));
+    c1.addOrder(null);
+    /*Customer c2 = new Customer("john", "chan", 'M', LocalDate.of(1990, 1, 1));
     Customer c3 = new Customer("Leo", "Lau");
 
     System.out.println(c1.getFirstName()); // null
@@ -93,7 +110,8 @@ public class Customer {
     Customer c10 = new Customer(orders);
     //c10 = new Customer(orders);
     System.out.println(c10.totalOrderAmount());
-    System.out.println(c10.isVip());
+    System.out.println(c10.isVip());*/
+    
 
     
 

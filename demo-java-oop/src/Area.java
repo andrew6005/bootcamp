@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public class Area {
   private double length;
   private double width;
@@ -14,8 +16,9 @@ public class Area {
   public double getWidth(){
     return this.width; 
   }
-  public double calculatetrapezoidalarea(){
-  return this.length + this.width * this.length/2; 
+  public BigDecimal calculatetrapezoidalarea(){
+  return BigDecimal.valueOf(this.length).add(BigDecimal.valueOf(this.width));
+  //this.length + this.width * this.length/2; 
   }
   public double calculatearea(){
     return this.length * this.width;

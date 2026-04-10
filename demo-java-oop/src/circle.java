@@ -1,5 +1,8 @@
-public class circle {
+import java.math.BigDecimal;
+
+public class Circle {
  private double radius;
+
 
   public double getRadius(){
     return this.radius;
@@ -10,13 +13,17 @@ public class circle {
 
 }
 
+public Circle(){
+
+}
+
  public  double area(){
-  return this.radius * this.radius * 3.14;
+  return BigDecimal.valueOf(this.radius).multiply(BigDecimal.valueOf(radius)).multiply(BigDecimal.valueOf(Math.PI)).doubleValue();
  }
   public static void main(String[] args) {
-    circle c1 = new circle();
-    c1.setRadius(9);
-    System.out.println(c1.getRadius());
-    System.out.println(c1.area());
+    System.out.println(new Circle(3.5).area());
+    
+    //System.out.println(c1.getRadius());
+    //System.out.println(c1.area());
   }
 }

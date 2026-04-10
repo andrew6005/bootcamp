@@ -1,0 +1,3 @@
+public enum OrderStatus {
+  PAID,PENDIN_SHIP,DELIVERED,WEEKDAY,GRADE;
+}

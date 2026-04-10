@@ -4,6 +4,9 @@ public class String1 {
   public int length(){
     return this.chs.length;
   }
+  public String1(){
+    this.chs = new char[0];
+  }
 
   public char charAt(int index){
     return this.chs[index];
@@ -72,6 +75,8 @@ public class String1 {
     //String s ="hello";
     System.out.println(str.afterreplace('l', 'x'));
     //System.err.println(s.replace('h', 'e'));
+    //contain("ll")
+    //
 
     
   }

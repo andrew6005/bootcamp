@@ -6,7 +6,9 @@ public class Car {
   private String color;
   private String brand;
   private String year;
-  private String model;
+  private String modle;
+
+  
 
  
   public String getColor(){
@@ -26,6 +28,12 @@ public class Car {
   }
   public void setYear(String year){
     this.year = year;
+  }
+  public void setModle(String modle){
+    this.modle = modle;
+  }
+  public String getModle(String modle){
+    return this.modle;
   }
   
   public static void main(String[] args) {

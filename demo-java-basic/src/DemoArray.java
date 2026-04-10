@@ -183,6 +183,10 @@ for(int i=0; i<ages.length; i++){ //0,1,2
                 System.out.println(revString);
             }
               //System.out.print("resv=" + revString);
+              double maxprice = prices[0];
+              for(int i =0; i<prices.length;i++){
+                
+              }
         
 
 

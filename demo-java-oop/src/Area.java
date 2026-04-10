@@ -15,7 +15,7 @@ public class Area {
     return this.width; 
   }
   public double calculatetrapezoidalarea(){
-    return this.length + this.width * this.length/2; 
+  return this.length + this.width * this.length/2; 
   }
   public double calculatearea(){
     return this.length * this.width;

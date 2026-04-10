@@ -15,7 +15,7 @@ public class circle {
  }
   public static void main(String[] args) {
     circle c1 = new circle();
-    c1.setRadius(5);
+    c1.setRadius(9);
     System.out.println(c1.getRadius());
     System.out.println(c1.area());
   }

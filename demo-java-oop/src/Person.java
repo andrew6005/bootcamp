@@ -3,16 +3,29 @@ public class Person {
   private double height;
   private double weight;
 
+  public Person(){
+
+  }
+  //* Createing object
+  public Person(String name, double height, double weight){
+    this.name = name;
+    this.height = height;
+    this.weight = weight;
+
+  }
+
   //instance method
   //presetation(APIE:encapsulation)
   public boolean overweight(){
-    if(this.Bmi() > 25){
+    if(this.weight > 25){
       return true;
-    } else {
+    } 
+    //base case
       return false;
-    }
+    
   }
   public String bmigroup(){
+    
     if(this.Bmi() < 18.5){
       return "underweight";
     } else if(this.Bmi() >= 18.5 && this.Bmi() < 25){
@@ -49,6 +62,9 @@ public class Person {
   public void setWeight(double weight){
     this.weight = weight;
   } 
+
+  //main = run time
+  //*  JVM exceute main mothod
   public static void main(String[] args) {
     Person p1 = new Person(); 
     p1.setName("john");

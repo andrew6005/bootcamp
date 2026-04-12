@@ -3,6 +3,7 @@ import java.math.BigDecimal;
 public class Area {
   private double length;
   private double width;
+  private long height;
 
   public void setLength(double length){
     this.length = length;
@@ -16,31 +17,35 @@ public class Area {
   public double getWidth(){
     return this.width; 
   }
-  public BigDecimal calculatetrapezoidalarea(){
-  return BigDecimal.valueOf(this.length).add(BigDecimal.valueOf(this.width));
-  //this.length + this.width * this.length/2; 
+  public BigDecimal calculateTrapezoidalArea() {
+    return BigDecimal.valueOf(this.length)
+            .add(BigDecimal.valueOf(this.width))
+            .multiply(BigDecimal.valueOf(this.height))
+            .divide(BigDecimal.valueOf(2));
+}
+  public BigDecimal calculatearea(){
+    return BigDecimal.valueOf(this.height).multiply(BigDecimal.valueOf(this.width));
+    //this.length * this.width;
   }
-  public double calculatearea(){
-    return this.length * this.width;
-  }
-  public double trianglearea(){
-    return this.length * this.width / 2;
+  public BigDecimal trianglearea(){
+    return BigDecimal.valueOf(this.length).add(BigDecimal.valueOf(height)).divide(BigDecimal.valueOf(2));
+    //this.length * this.width / 2;
   }
 
   public static void main(String[] args) {
     Area a1 = new Area();
-    a1.setLength(10.8);
+    a1.setLength(100.8);
     a1.setWidth(5.5);
 
     Area a2 = new Area();
-    a2.setLength(20.9);
-    a2.setWidth(10.5);
+    a2.setLength(200.9);
+    a2.setWidth(1005.5);
 
 
-    System.out.println(a1.calculatetrapezoidalarea());
+    System.out.println(a1.calculateTrapezoidalArea());
     System.out.println(a1.calculatearea());
     System.out.println(a1.trianglearea());
-    System.out.println(a2.calculatetrapezoidalarea());
+    System.out.println(a2.calculateTrapezoidalArea());
     System.out.println(a2.calculatearea());
     System.out.println(a2.trianglearea());
 

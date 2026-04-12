@@ -1,35 +1,48 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Trigonometricfunctions {
   private double Hypotenuse;
   private double Opposite;
   private double Adjacent; 
 
-  public double getHypotenuse(){
+  public double getHypotenuse() {
     return this.Hypotenuse;
   }
-  public void setHypotenuse(double Hypotenuse){
-    this.Hypotenuse = Hypotenuse; 
-}
 
-  public double getOpposite(){
+  public void setHypotenuse(double Hypotenuse) {
+    this.Hypotenuse = Hypotenuse; 
+  }
+
+  public double getOpposite() {
     return this.Opposite;
   }
-  public void setOpposite(double Opposite){
+
+  public void setOpposite(double Opposite) {
     this.Opposite = Opposite; 
-}
-  public double getAdjacent(){
+  }
+
+  public double getAdjacent() {
     return this.Adjacent;
   }
-  public void setAdjacent(double Adjacent){
+
+  public void setAdjacent(double Adjacent) {
     this.Adjacent = Adjacent; 
-}
-  public double sine(){
-    return this.Opposite / this.Hypotenuse;
   }
-  public double cosine(){
-    return this.Adjacent / this.Hypotenuse;
+
+  public BigDecimal sine() {
+    return BigDecimal.valueOf(this.Opposite)
+        .divide(BigDecimal.valueOf(this.Hypotenuse), 10, RoundingMode.HALF_UP);
   }
-  public double tangent(){
-    return this.Opposite / this.Adjacent;
+
+  public BigDecimal cosine() {
+    return BigDecimal.valueOf(this.Adjacent)
+        .divide(BigDecimal.valueOf(this.Hypotenuse), 10, RoundingMode.HALF_UP);
+  }
+
+  public BigDecimal tangent() {
+    return BigDecimal.valueOf(this.Opposite)
+        .divide(BigDecimal.valueOf(this.Adjacent), 10, RoundingMode.HALF_UP);
   }
 
   public static void main(String[] args) {

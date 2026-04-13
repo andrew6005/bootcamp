@@ -52,7 +52,7 @@ public class Customer {
       newOrders[i] =  this.orders[i];
 
     }
-    newOrders[newOrders.length-1] = newOrders;
+    newOrders[newOrders.length-1] = order;
     this.orders =newOrders;
   }
 
@@ -81,7 +81,7 @@ public class Customer {
     
     Customer c1 = new Customer();
     c1.addOrder(null);
-    /*Customer c2 = new Customer("john", "chan", 'M', LocalDate.of(1990, 1, 1));
+    Customer c2 = new Customer("john", "chan", 'M', LocalDate.of(1990, 1, 1));
     Customer c3 = new Customer("Leo", "Lau");
 
     System.out.println(c1.getFirstName()); // null
@@ -110,7 +110,7 @@ public class Customer {
     Customer c10 = new Customer(orders);
     //c10 = new Customer(orders);
     System.out.println(c10.totalOrderAmount());
-    System.out.println(c10.isVip());*/
+    System.out.println(c10.isVip());
     
 
     

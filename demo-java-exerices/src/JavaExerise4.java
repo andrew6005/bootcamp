@@ -14,49 +14,7 @@ public class JavaExerise4 {
         // Input year
         System.out.print("Input a year: ");
        int year = scanner.nextInt();
-       /*  boolean isLeapYear = false;
-        if(year %4==0){
-            if(year %100 ==0){
-                if(year %400==0){
-
-                }
-
-            }
-
-        }
-        /*int year = 2025;
-    boolean isLeapYear =  false;
-
-    if(year % 4 == 0 ){
-      if(year % 100==0){
-        
-        if(year % 400==0){
-          isLeapYear = true;
-          System.out.println("this is leap year");
-        }else{
-          isLeapYear = false;
-          System.out.println("this is not leap year");
-          
-        }
-
-        }else{
-          isLeapYear= true;
-          System.out.println("this is leap year");
-           
-
-        }
-
-      }else{
-        isLeapYear=false;
-        System.out.println("this is not leap year");
-        
-
-    }
-    if(year %400 ==0 || year %4==0&& year%100!=0){
-      System.out.println("this is  leap year");
-    }else{
-      System.out.println("this is not leap year");
-    } */
+       
 
         // Use switch to check the month
         switch (month) {

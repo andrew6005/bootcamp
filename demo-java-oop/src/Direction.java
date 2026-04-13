@@ -14,14 +14,20 @@ public enum Direction {
   public String getDesc(){
     return this.desc;
   }
+
+  public void setvalue(int value){
+    this.value = value;
+  }
  
   public Direction oppsite(){
+    //*for each loop
     for(Direction d: Direction.values()){
     if(this.value * -1 ==d.getValue()){
       return d;
 
 
     }
+   System.out.println(d.getDesc());
     
 
 
@@ -39,5 +45,28 @@ public enum Direction {
     System.out.println(d.getDesc());
     }
     System.out.println(Direction.NORTH.oppsite());
+        for(Direction d: Direction.values()){
+    /*if(this.value * -1 ==d.getValue()){
+      return d;
+
+
+    }*/
+   System.out.println(d.getDesc());
+    
+
+
+}
+
+    int []arr = new int[]{4,9,-5};
+    for(int i = 0; i<arr.length;i++){//flexible to control iteration
+        System.out.println(arr[i]);
+    } 
+    //Loop through all elemnets
+    for(int x :arr){
+      System.out.println(x);
+
+    }
+    Direction.EAST.setvalue(100);
+    System.out.println(EAST);
   }
 }

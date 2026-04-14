@@ -13,13 +13,13 @@ public class Cat extends Animal{
   System.out.println(c1.getName());
   //d1.setWeight(9.5);
   }
- /*private String name;
+ private String name;
   private int age;
-  private double weight;*/
+  private double weight;
 
 
 
-/*public Cat(String name, int age){
+public Cat(String name, int age){
   this.age=age;
   this.name=name;
 }
@@ -34,7 +34,7 @@ public String setName(String name){
 }
 public int setAge(int age){
   return this.age;
-}*/
+}
 
 
 }

@@ -3,6 +3,7 @@ public abstract class Shape {
   private double height;
   private double area;
   private Color Color;
+  public Object getColor;
 
   public Shape(){
 
@@ -35,5 +36,18 @@ public abstract class Shape {
   }
    public double setaArea(){
     return this.area;
+  }
+  /*public double CircleArea(){
+    return -0.1;
+  }*/
+
+  abstract double CircleArea();
+  public static void main(String[] args) {
+    Shape s1 = new Circle(3.5);
+    System.out.println(s1.CircleArea());
+  }
+  public boolean equalCircle(Object obj) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'equalCircle'");
   }
 }

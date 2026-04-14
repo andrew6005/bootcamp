@@ -5,7 +5,7 @@
 public abstract class Animal {
 
   // common Attributese
-  private String name;
+  public String name;
   private int age;
   public Animal(){
     

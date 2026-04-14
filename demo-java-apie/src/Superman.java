@@ -14,10 +14,6 @@ public class Superman extends Human implements flyable , Swimable{
     System.out.println("superman is swiming");
   }
 
-  public Superman(){
-    this.hp=100;
-    this.attackValue=5;
-  }
   public void attack(Superman superman){
     if(this.isAlive()){
     superman.deducthp(this.attackValue);
@@ -25,6 +21,11 @@ public class Superman extends Human implements flyable , Swimable{
 
 }
 
+  }
+  public Superman(String name){
+    super();
+    this.hp=100;
+    this.attackValue = 5;
   }
 
 
@@ -44,6 +45,10 @@ public class Superman extends Human implements flyable , Swimable{
   public int getHp(){
     return this.hp;
   }
+    public Superman(){
+    this.hp=100;
+    this.attackValue=5;
+  }
  
   public static void main(String[] args) {
     /*Superman s1 = new Superman();
@@ -59,11 +64,38 @@ public class Superman extends Human implements flyable , Swimable{
     s2.deducthp(100);
     System.out.println(s2.isAlive());
     System.out.println(s2.getHp());*/
-    Superman s3 =new Superman();
+    Superman s3 =new Superman("john");
+    
 
-    s3.setName("john");
+    s3.setName("peter");
     //super();
-  System.out.println(s3.getClass().getName());
+  System.out.println(s3.getName());
+  //! polymorphism
+
+  Superman s4 = new Superman();
+  Human h1 = new Superman();
+  Human h2 = new Human();
+  //h1= new Student();
+  //h1.fly();
+  //h1.swim();
+  System.out.println(h1.getName());
+  h1.setName("john");
+  flyable f= new Superman("leo");
+  f.fly();
+  
+  flyable[]fly = new flyable[]{new Superman(), new Superman("susan")};
+  for(int i =0; i<fly.length;i++){
+    fly[i].fly();
+
+  }
+
+  //*Static polymorphism
+  //* call mothod Name(int x, int y), method name (double x , double,y)
+
+  //*  Dynamic polymorphism(runtime decide method content)
+  //* h1 -> Superan object (getname) or student object(getname) 
+
+  
 
 
     

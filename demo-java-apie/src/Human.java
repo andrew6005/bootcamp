@@ -1,14 +1,17 @@
-public abstract class Human {
+public  class Human {
   private String name;
 
   public void String(){
     
   }
-   public String setName(String string){
+   public void setName(String name){
+    this.name= name;
+    
+   }
+   public  String  getName(){
     return this.name;
     
    }
-   public  void  getName(){
-     this.name=name;
-   }
+ 
+  
 }

@@ -16,6 +16,11 @@ public class Circle extends Shape {
     return Objects.hash(this.radius, getColor());
   }
 
+  /*private Object getColor() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getColor'");
+  }*/
+
   private Object getColor() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getColor'");

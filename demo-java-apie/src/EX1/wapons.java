@@ -1,7 +1,7 @@
 package EX1;
 
-public class Heros {
-  public static int[][] maxhpArr = new int[] []{
+public class wapons {
+    public static int[][] maxhpArr = new int[] []{
     {100,200,300,400,500},
       {100,200,300,400,500},
         {100,200,300,400,500}
@@ -67,4 +67,5 @@ public class Heros {
     }
 
   }
+  
 }

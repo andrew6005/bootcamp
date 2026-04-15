@@ -1,6 +1,6 @@
 package EX1;
 public abstract class Hero {
-  private static int idCounter =0;
+ private static int idCounter =0;
  private int level;
  private String name;
  private int id;
@@ -8,7 +8,24 @@ public abstract class Hero {
  private int HP;
 
   private int MP;
+  abstract int getpa();
+  abstract void attack();
+  private Wapon wapon;
 
+
+  public Wapon getWapons(){
+   return this.wapon = wapon;
+   
+  }
+
+  public void equip(Wapon wapon){
+   this.wapon=wapon;
+
+  }
+  public void removeWeapon(){
+   this.wapon= null;
+
+  }
 
  public Hero(String name){
     this.level=1;
@@ -33,6 +50,22 @@ public abstract class Hero {
   Hero h1 =  new Warrior("john") ;
 
    h1.levelup();
+   Hero h2= new Warrior("tom");
+   h2.equip(Sword.ofDONRAN());
+   h2.removeWeapon();
+  
+      
+   ;
   
  }
+public boolean isAlive(){
+   return this.HP>0;
+}
+public void addExp(int exp){
+    this.exp += exp;
+}
+abstract void deductHP(int toBededucted);
+
+
+
 }

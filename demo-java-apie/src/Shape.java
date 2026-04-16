@@ -47,7 +47,7 @@ public abstract class Shape {
         Shape[] shapes = new Shape[]{
             //new Circle(3.5, Color.RED),
             //new Circle(4.6, Color.RED),
-            new Square(5.9, Color.RED)
+            new Square(5.9, Color.Red)
         };
 
         double sum = 0.0;

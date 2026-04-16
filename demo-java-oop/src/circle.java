@@ -25,7 +25,7 @@ public class Circle {
   }
 
   // ! All Arguments Contructor (with all attribute)
-  public Circle(double radius) {
+  public Circle(double radius, Color red) {
     this.radius = radius;
   }
 

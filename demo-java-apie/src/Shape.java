@@ -1,53 +1,60 @@
 public abstract class Shape {
-  private double width;
-  private double height;
-  private double area;
-  private Color Color;
-  public Object getColor;
+    private double width;
+    private double height;
+    private Color color;
 
-  public Shape(){
+    public Shape() {
+        super();
+    }
 
-  }
-  public Shape(Color color){
-    this.Color = color;
-  }
-  public Shape(double width ,double height, double area ){
-    this.height=height;
-    this.width=width;
-    this. area= area;
+    public Shape(Color color) {
+        this.color = color;
+    }
 
+    public Shape(double width, double height, Color color) {
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
 
-  } 
+    public double getWidth() {
+        return this.width;
+    }
 
-  public double getHeight(){
-    return this.height;
-  }
-   public double width(){
-    return this.width;
-  }
- public double getarea(){
-    return this.area;
-  }
-  public double setHeight(){
-    return this. height;
-  }
-   public double setWidth(){
-    return this.width;
-  }
-   public double setaArea(){
-    return this.area;
-  }
-  /*public double CircleArea(){
-    return -0.1;
-  }*/
+    public void setWidth(double width) {
+        this.width = width;
+    }
 
-  abstract double CircleArea();
-  public static void main(String[] args) {
-    Shape s1 = new Circle(3.5);
-    System.out.println(s1.CircleArea());
-  }
-  public boolean equalCircle(Object obj) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'equalCircle'");
-  }
+    public double getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public Color getColor() {
+        return this.color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public abstract double area();
+
+    public static void main(String[] args) {
+        Shape[] shapes = new Shape[]{
+            //new Circle(3.5, Color.RED),
+            //new Circle(4.6, Color.RED),
+            new Square(5.9, Color.RED)
+        };
+
+        double sum = 0.0;
+        for (Shape shape : shapes) {
+            sum += shape.area();
+        }
+
+        System.out.println("Total area = " + sum);
+    }
 }

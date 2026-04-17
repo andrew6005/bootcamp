@@ -114,7 +114,7 @@ public static void main(String[] args) {
     System.out.println("Final fruit list: " + fruits);
     System.out.println();
 
-    // Exercise 3: Remove Duplicates
+    
     System.out.println("Exercise 3");
     ArrayList<Integer> numbers2 = new ArrayList<>();
     numbers2.add(10);

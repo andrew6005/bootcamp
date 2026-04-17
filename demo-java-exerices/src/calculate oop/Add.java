@@ -1,9 +1,14 @@
+
+
 public class Add extends Operation {
- public Add(double a, double b) {
+ public Add(int a, int b) {
         super(a, b);
     }
 
-    public double calculate() {
-        return this.a + this.b;
+
+
+    public int calculate() {
+        //return this.a+this.b;
+        return this.a+this.b;
     }
 }

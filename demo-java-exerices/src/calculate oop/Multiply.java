@@ -1,10 +1,12 @@
 public class Multiply extends Operation {
 
-    public Multiply(double a, double b) {
+    public Multiply(int a, int b) {
         super(a, b);
     }
 
-    public double calculate() {
+    public int calculate() {
+        
         return this.a * this.b;
+        
     }
 }

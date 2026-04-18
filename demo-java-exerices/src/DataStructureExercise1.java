@@ -145,7 +145,7 @@ public static void main(String[] args) {
     boolean addedAgain = countries.add("India");
 
     System.out.println("Add India again result: " + addedAgain);
-    System.out.println("Countries: " + countries);
+    System.out.println("Countries:" + countries);
     System.out.println();
 
     System.out.println("Exercise 5");

@@ -41,7 +41,7 @@ public class DemoHashMap {
     hashMap3.put("name", name);
     System.out.println(hashMap3);
     System.out.println(hashMap3.get("name").contains("Peter"));
-    Random random =new Random();
+    //Random random =new Random();
     //((Object) hashMap2).random(String , cat);
    // hashMap3.
     //cat = new Cat();

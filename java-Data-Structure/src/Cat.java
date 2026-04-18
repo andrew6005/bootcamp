@@ -11,6 +11,10 @@ public class Cat {
         return this.name;
     }
 
+
+
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -26,5 +30,15 @@ public class Cat {
     @Override
     public int hashCode() {
         return Objects.hash(this.name);
+    }
+
+    @Override
+    public String toString(){
+        return "Cat(name="+ this.name +")";
+    }
+
+    public static void main(String[] args) {
+        Cat c1= new Cat("john");
+        System.out.println(c1);
     }
 }

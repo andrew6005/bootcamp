@@ -1,0 +1,31 @@
+public class Person implements Comparable<Person>{
+public static Person head;
+private int age;
+private String name;
+public int getAge(){
+  return this.age;
+}
+public Person(int age){
+  this.age =age;
+}
+
+@Override
+public int compareTo(Person person){
+return this.age>person.getAge()?-1:1;
+
+  
+}
+  public String toString(){
+        return "Cat(name="+ this.name +")";
+    }
+
+    public static void main(String[] args) {
+       Cat c1= new peopl("john");
+        System.out.println(c1);
+    }
+
+
+
+
+
+}

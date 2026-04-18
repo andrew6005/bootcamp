@@ -222,7 +222,7 @@ public class DataStructureExercise2 {
     System.out.println("Inversed map: " + capitalToCountry);
     System.out.println();
 
-    // Exercise 8: HashMap with Multiple Values
+   
     System.out.println("Exercise 8");
     HashMap<String, ArrayList<String>> studentSubjects = new HashMap<>();
 

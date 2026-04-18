@@ -1,11 +1,13 @@
+import java.math.BigDecimal;
+
 public class Multi extends Calculate {
 
-    public Multi(double a, double b) {
+    public Multi(BigDecimal a, BigDecimal b) {
         super(a, b);
     }
 
     @Override
-    public double calculate() {
-        return getA() * getB();
+    public BigDecimal calculate() {
+        return getA().multiply(getB());
     }
 }

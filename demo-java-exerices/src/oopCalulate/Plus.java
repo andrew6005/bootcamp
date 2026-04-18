@@ -1,11 +1,13 @@
+import java.math.BigDecimal;
+
 public class Plus extends Calculate {
 
-    public Plus(double a, double b) {
+    public Plus(BigDecimal a, BigDecimal b) {
         super(a, b);
     }
 
     @Override
-    public double calculate() {
-        return getA() + getB();
+    public BigDecimal calculate() {
+        return getA().add(getB());
     }
 }

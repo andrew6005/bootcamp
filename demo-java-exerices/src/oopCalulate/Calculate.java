@@ -1,37 +1,55 @@
-public abstract class Calculate {
-    private double a;
-    private double b;
+import java.math.BigDecimal;
 
-    public Calculate(double a, double b) {
+public abstract class Calculate {
+    private BigDecimal a;
+    private BigDecimal b;
+
+    public Calculate(BigDecimal a, BigDecimal b) {
         this.a = a;
         this.b = b;
     }
 
-    public double getA() {
+    public BigDecimal getA() {
         return this.a;
     }
 
-    public double getB() {
+    public BigDecimal getB() {
         return this.b;
     }
 
-    public abstract double calculate();
-
+    public abstract BigDecimal calculate();
 
     public static void main(String[] args) {
-        Calculate add = new Plus(10.8, 5);
-        Calculate sub = new Subtract(14.6, 5);
-        Calculate multi = new Multi(123.6, 5);
-        Calculate divide = new Divide(1123.5, 5);
-        Calculate divideZero = new Divide(1230.6, 0);
 
-        System.out.println("Plus" + add.calculate());
-        System.out.println("Subtract" + sub.calculate());
-        System.out.println("Multi" + multi.calculate());
-        System.out.println("divide" + divide.calculate());
-        System.out.println("divide" + divideZero.calculate());
+        Plus plus = new Plus(
+            BigDecimal.valueOf(128.8),
+            BigDecimal.valueOf(355.7)
+        );
+
+        Subtract subtract = new Subtract(
+            BigDecimal.valueOf(3238.8),
+            BigDecimal.valueOf(1283.8)
+        );
+
+        Multi multi = new Multi(
+            BigDecimal.valueOf(3238.8),
+            BigDecimal.valueOf(1283.8)
+        );
+
+        Divide divide = new Divide(
+            BigDecimal.valueOf(3238.8),
+            BigDecimal.valueOf(1283.8)
+        );
+
+        Divide divideZero = new Divide(
+            BigDecimal.valueOf(3238.8),
+            BigDecimal.ZERO
+        );
+
+        System.out.println("Plus: " + plus.calculate());
+        System.out.println("Subtract: " + subtract.calculate());
+        System.out.println("Multi: " + multi.calculate());
+        System.out.println("Divide: " + divide.calculate());
+        System.out.println("DivideZero: " + divideZero.calculate());
     }
-
-
-
 }

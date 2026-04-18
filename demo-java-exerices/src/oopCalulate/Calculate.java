@@ -9,6 +9,7 @@ public abstract class Calculate {
         this.b = b;
     }
 
+
     public BigDecimal getA() {
         return this.a;
     }

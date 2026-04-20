@@ -15,14 +15,18 @@ return this.age>person.getAge()?-1:1;
 
   
 }
+  @Override
   public String toString(){
-        return "Cat(name="+ this.name +")";
+        //return "Cat(name="+ this.name +")";
+
+        return "Person("+"age="+this.age+")";
     }
 
     public static void main(String[] args) {
-       Cat c1= new peopl("john");
-        System.out.println(c1);
+       //Cat c1= new People("john");
+        //System.out.println(c1);
     }
+    
 
 
 

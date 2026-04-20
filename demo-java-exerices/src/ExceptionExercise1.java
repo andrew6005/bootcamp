@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class ExceptionExercise1 {
+  // Question: Write a program that divides two numbers provided by the user. Handle the
+  // ArithmeticException when dividing by zero and display an appropriate message.
+
+  // 1. If exception is caught, print "Error: Cannot divide by zero.", otherwise print "Result: X"
+  // 2. No matter if the exception is caught, finally print "Division operation completed."
+  public static void main(String[] args) {
+    
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter numerator: ");
+    int numerator = scanner.nextInt();
+    System.out.print("Enter denominator: ");
+    int denominator = scanner.nextInt();
+    scanner.close();
+    int Result;
+    if(!numeratorzore()){
+      try{
+      Result = numerator/denominator;
+      System.out.println(Result);
+
+      }catch (Exception e){
+        System.out.println("error:numerator could not zore");
+
+      }
+
+    }
+    if(!denominatorzore()){
+try{
+      Result = denominator/numerator;
+      System.out.println(Result);
+
+      }catch (Exception f){
+        System.out.println("error:denominator could not zore");
+
+      }
+    }
+ 
+    
+
+
+
+    // code here ...
+    // try, catch
+
+
+  }
+
+  public static Boolean numeratorzore(){
+    return false;
+   
+  }public static Boolean denominatorzore(){
+    return false;
+  }
+}

@@ -15,10 +15,21 @@ public class ExceptionExercise1 {
     System.out.print("Enter denominator: ");
     int denominator = scanner.nextInt();
     scanner.close();
-    int Result;
-    if(!numeratorzore()){
+    //int result;
+
+    try{
+      int result = numerator/denominator;
+      System.out.println("Result"+result);
+
+    }catch(ArithmeticException e){
+      System.out.println("Error: Cannot divide by zero.");
+    }finally{
+       System.out.println("Division completed.");
+    }
+    /*if(!numeratorzore()){
       try{
       Result = numerator/denominator;
+
       System.out.println(Result);
 
       }catch (Exception e){
@@ -43,15 +54,10 @@ try{
 
 
     // code here ...
-    // try, catch
+    // try, catch*/
 
 
   }
 
-  public static Boolean numeratorzore(){
-    return false;
-   
-  }public static Boolean denominatorzore(){
-    return false;
-  }
+ 
 }

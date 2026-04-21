@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class ExceptionExercise4 {
 
+
+
+
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
@@ -15,6 +18,10 @@ public class ExceptionExercise4 {
     String email = scanner.nextLine();
 
     scanner.close();
+
+    
+
+
 
     try {
       registerUser(username, password, email);
@@ -40,7 +47,6 @@ public class ExceptionExercise4 {
       throw new UserRegistrationException(e.getMessage());
     }
   }
-
   private static void validateUsername(String username) {
     if (username == null || username.trim().isEmpty()) {
       throw new IllegalArgumentException("Invalid username");
@@ -49,7 +55,7 @@ public class ExceptionExercise4 {
 
   private static void validatePassword(String password) {
     if (password == null || password.length() < 8) {
-      throw new IllegalArgumentException("Invalid password");
+      throw new IllegalArgumentException("Invalid password aleast one chatacter");
     }
 
     boolean hasSpecialChar = false;
@@ -73,3 +79,11 @@ public class ExceptionExercise4 {
     }
   }
 }
+
+
+//!Stat mothed ->oject won`t contributw reslet so static mothmod is moew appotoriate
+//!1.Instance variable
+//! Static Varible
+//!3.Static Final  Varable
+//! Fnal Instance
+//*contant (static final) namming conevension capital letter sanke case)

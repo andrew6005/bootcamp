@@ -1,6 +1,3 @@
-
-
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
@@ -9,8 +6,8 @@ public class InsertStudent {
     try(Connection conn= DBUtil.getConnection()){
       String sql = "INSERT INTO STUDENTS(name, email)VALUES(?,?)";
       PreparedStatement stmt =conn.prepareStatement(sql);
-      stmt.setString(1, "john");
-      stmt.setString(2, "john@example.com");
+      stmt.setString(1, "hugo");
+      stmt.setString(2, "hugo@example.com");
       int rows =stmt.executeUpdate();
       System.out.println("instered"+rows);
 

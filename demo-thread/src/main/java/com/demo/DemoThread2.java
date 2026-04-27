@@ -1,7 +1,15 @@
 package com.demo;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class DemoThread2 {
+    //
     private int x;
+    private AtomicInteger y;
+
+    public DemoThread2(){
+      this.y=new AtomicInteger(0);
+    }
   public static void main(String[] args) {
    DemoThread2 d =new DemoThread2();
 
@@ -29,7 +37,8 @@ public class DemoThread2 {
     System.out.println(d.getX());
   }
   public synchronized void addone(){
-    this.x++;
+    //this.x++;
+    this.y.getAndIncrement();
   }
     public  void add(int time){
     this.x=0;
@@ -39,7 +48,7 @@ public class DemoThread2 {
     }
   }
 public int getX(){
-  return this.x;
+  return this.y.get();
 }
 
 }

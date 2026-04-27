@@ -2,7 +2,7 @@ package com.demo;
 
 public class DemoThread {
 
-  //! multi Thread 
+ 
 public static void main(String[] args) {
   
  Runnable task =  new PrintHelloworldTenTime() ;

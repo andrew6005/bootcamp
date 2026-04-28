@@ -172,6 +172,7 @@ public class StreamExercise {
     // new Person("Charlie", 30)
 
     // Output: {30=[Alice, Charlie], 25=[Bob]} (Map)
+    
 
 
 
@@ -207,7 +208,18 @@ public class StreamExercise {
     // new Staff("Charlie", Gender.Male)
 
     // Output: {false=[Alice], true=[Bob, Charlie]} (Map)
+List<Staff> staffList = Arrays.asList(
+            new Staff("Alice", Gender.Female),
+            new Staff("Bob", Gender.Male),
+            new Staff("Charlie", Gender.Male)
+        );
 
+        // Partition by: is the gender Male?
+        // true = Male, false = Female
+        Map<Boolean, List<Staff>> partitioned = staffList.stream()
+            .collect(Collectors.partitioningBy(s -> s.getGender() == Gender.Male));
+
+        System.out.println(partitioned);
 
 
 
@@ -274,11 +286,22 @@ public class StreamExercise {
     // Task: Given a list of lists of numbers, flatten them into a single list and filter only the
     // numbers greater than 5.
 
-    List<List<Integer>> listOfIntegers = Arrays.asList( //
-        Arrays.asList(1, 2, 3), //
-        Arrays.asList(4, 5, 6), //
-        Arrays.asList(7, 8, 9) //
-    );
+// Output: [6, 7, 8, 9]
+  List<List<Integer>> listOfIntegers = Arrays.asList(
+            Arrays.asList(1, 2, 3),
+            Arrays.asList(4, 5, 6),
+            Arrays.asList(7, 8, 9)
+        );
+
+        // 1. flatMap: Converts each List<Integer> into a Stream<Integer>
+        // 2. filter: Only keeps numbers > 5
+        // 3. collect: Puts the results into a new List
+        List<Integer> result18 = listOfIntegers.stream()
+                                             .flatMap(List::stream)
+                                             .filter(n -> n > 5)
+                                             .collect(Collectors.toList());
+
+        System.out.println("Q18:  "+result18);
     // Output: [6, 7, 8, 9]
 
     // 19. Distinct and Sorting
@@ -316,10 +339,10 @@ public class StreamExercise {
         );
 
         // Partitioning the list into two groups
-        Map<Boolean, List<Children>> partitioned = childrenList.stream()
+        Map<Boolean, List<Children>> partitioned1 = childrenList.stream()
             .collect(Collectors.partitioningBy(c -> c.getScore() >= 50));
 
-        System.out.println(partitioned);
+        System.out.println(partitioned1);
 
     // 21. Joining Strings
     // Task: Given a list of words, join them into a single string separated by commas.

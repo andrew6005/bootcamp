@@ -10,6 +10,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamExercise {
   public static void main(String[] args) {
@@ -476,6 +477,11 @@ List<Integer> duplicates = Arrays.asList(2, 1, 2, 3, 4, 3, 5, 5, 6);
                                   .sum();
 
         System.out.println(totalLength); 
+
+        Stream <String> name5 = Stream.of("john");
+        Stream<String> name5AfterFiltered = name5.filter(e ->e.length()>=5);
+        List<String> finalName=name5AfterFiltered.collect(Collectors.toList());
+        System.out.println("extra:    "+finalName);
       
 
 

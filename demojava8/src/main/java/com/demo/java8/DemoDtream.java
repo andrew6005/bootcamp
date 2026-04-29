@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class DemoDtream {
   public static void main(String[] args) {
     //Loop
-    1.
+    // 1.
     List<String> names = new ArrayList<>(List.of("john", "peter","tom"));
    /* for(int i = 0; i<names.size();i++){
       System.out.println(names.get(i));

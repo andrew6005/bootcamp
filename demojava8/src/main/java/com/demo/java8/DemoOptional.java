@@ -1,6 +1,6 @@
 package com.demo.java8;
 
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -12,7 +12,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class DemoOptional {
+/public class DemoOptional {
  
 
 
@@ -67,7 +67,7 @@ public class DemoOptional {
   }
 
   }
-  //private Optional<String> name;//*1.Database don`t know what Optional is. */
+  //private Optional<String> name;*///*1.Database don`t know what Optional is. */
   //*method input paramter(create meaningless coding) */
 
 

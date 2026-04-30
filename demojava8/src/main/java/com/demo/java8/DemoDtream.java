@@ -33,7 +33,7 @@ public class DemoDtream {
     .collect(Collectors.toList());
     System.out.println(newNames);
 //* map
-List<Cat> cats =names.stream().filter(name-> name.startsWith("j"))
+/*List<Cat> cats =names.stream().filter(name-> name.startsWith("j"))
 .map(name -> new Cat(name))
 .collect(Collectors.toList());
 System.out.println(cats);

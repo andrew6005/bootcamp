@@ -1,4 +1,4 @@
-import lombok.AllArgsConstructor;
+/*import lombok.AllArgsConstructor;
 import lombok.Getter;
 @AllArgsConstructor
 @Getter
@@ -34,3 +34,4 @@ public  int getValue(){
     
   }
 }
+  */

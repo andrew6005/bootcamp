@@ -30,7 +30,7 @@ public class DemoSwitchExpression {
     }
 
     //with retun version
-
+//!check all possible values  in enum has been written down
         String result = switch (color) {
       case red -> {
         System.out.println("this is red");
@@ -46,6 +46,7 @@ public class DemoSwitchExpression {
       }
       
     };
+    System.out.println(result);
 
     //Java 14
   }

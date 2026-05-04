@@ -13,9 +13,9 @@ public class DemoMath {
     double pi =Math.PI;
     double radius  = 3.5;
     double area = radius *radius*pi;
-    System.out.println(area);
-    //!round
-    System.out.println();
+    // System.out.println(area);
+    // //!round
+    // System.out.println();
 
     //! abs
     int x = -2; //2/-2
@@ -23,9 +23,9 @@ public class DemoMath {
       x=x*-1;
 
     }
-    System.out.println(x);
+    // System.out.println(x);
     int y= -3;
-    System.out.println(Math.abs(y));
+    // System.out.println(Math.abs(y));
 
     //!max/min
     int[] arr= new int[]{10,4,8,99,-2};
@@ -39,19 +39,19 @@ public class DemoMath {
 
       }
 
-      System.out.println(max);
-      System.out.println(min);
+      // System.out.println(max);
+      // System.out.println(min);
     }
     
     
 
     //!floor, cell
-    System.out.println(Math.floor(10.9));
-    System.out.println(Math.ceil(10.1));
+    // System.out.println(Math.floor(10.9));
+    // System.out.println(Math.ceil(10.1));
 
-    //
-    double number = Math.random();//0-1
-    System.out.println(number);
+    // //
+    // double number = Math.random();//0-1
+    // System.out.println(number);
     //100-1100
     //(Math.random()*100)+1000;
 

@@ -1,25 +1,35 @@
 package com.javahongkong.bootcamp.exercise;
 
-public interface TransactionInterface {
+public class TransactionInterface {
 
-	/**
-	 * @return The account balance for account {@link Transaction#accountNumber}
-	 *         .
-	 */
-	public double getBalance();
+  private long accountNumber;
+  private double balance;
 
-	/**
-	 * @param amount
-	 *            The amount to credit/deposit into account
-	 *            {@link Transaction#accountNumber}
-	 */
-	public void credit(double amount);
+  public TransactionInterface(long accountNumber, double balance) {
+    this.accountNumber = accountNumber;
+    this.balance = balance;
+  }
 
-	/**
-	 * @param amount
-	 *            The amount to debit/withdraw from account
-	 *            {@link Transaction#accountNumber}
-	 * @return true if amount could be withdrawn; otherwise, return false.
-	 */
-	public boolean debit(double amount);
+
+  public double getBalance() {
+    return this.balance;
+  }
+
+
+  public void credit(double amount) {
+    if (amount > 0) {
+      this.balance += amount;
+    }
+  }
+
+
+  public boolean debit(double amount) {
+    if (amount > 0 && this.balance >= amount) {
+      this.balance -= amount;
+      return true;
+    }
+    return false;
+  }
+
+
 }

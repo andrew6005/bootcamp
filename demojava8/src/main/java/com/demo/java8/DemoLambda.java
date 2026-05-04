@@ -41,7 +41,7 @@ public class DemoLambda {
       System.out.println(equalsFunction.test(null,"hello"));
 
     Supplier<Integer> randomMarksixFunction = () -> new Random().nextInt(49)+1;
-    System.out.println(randomMarksixFunction.get());
+    System.out.println("Marksixnumber:    "+randomMarksixFunction.get());
 
     UnaryOperator<String>upperString=s->s.toUpperCase();
     System.out.println(upperString.apply("hello"));
@@ -56,13 +56,13 @@ public class DemoLambda {
 
     MathOperation< Integer,Integer, Integer> sumopartion = (i1,i2) -> i1+i2;
     System.out.println(sumopartion.compute(7, 9));
-    MathOperation<Double,Double,Double> sumDoubleopartion = (d1,d2) -> 
-    BigDecimal.valueOf(d1).add(BigDecimal.valueOf(d2)
-    .doubleValue());
-     System.out.println(sumDoubleopartion.compute(0.1, 0.2));
+    // MathOperation<Double,Double,Double> sumDoubleopartion = (d1,d2) -> 
+    // BigDecimal.valueOf(d1).add(BigDecimal.valueOf(d2)
+    // .doubleValue());
+    //  System.out.println(sumDoubleopartion.compute(0.1, 0.2));
 
      //consumer
-     Consumer<String> PrintString =s -> System.out.println();
+    //  Consumer<String> PrintString =s -> System.out.println();
 
 
 

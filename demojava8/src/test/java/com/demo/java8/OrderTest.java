@@ -39,4 +39,11 @@ void testAdd2(){
 
 }
 
+@Test
+void testbasic(){
+  String s= "hello";
+  assertThat(s,is("Hello"));
+  
+}
+
 }

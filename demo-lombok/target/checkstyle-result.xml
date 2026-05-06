@@ -40,8 +40,6 @@
 <error line="51" column="3" severity="error" message="&apos;method def rcurly&apos; 缩进了2个缩进符，应为4个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="51" column="3" severity="error" message="&apos;}&apos; 后只应有一个空行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 </file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-lombok/src/main/java/com/demo/App.java">
-</file>
 <file name="/Users/andrew/Documents/github/bootcamp/demo-lombok/src/test/java/com/demo/AccountTest.java">
 <error line="6" column="1" severity="error" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="7" column="3" severity="error" message="&apos;method def modifier&apos; 缩进了2个缩进符，应为4个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
@@ -55,7 +53,5 @@
 <error line="12" column="29" severity="error" message="&apos;2200&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 <error line="12" column="33" severity="error" message="&apos;,&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 <error line="15" column="3" severity="error" message="&apos;method def rcurly&apos; 缩进了2个缩进符，应为4个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-lombok/src/test/java/com/demo/AppTest.java">
 </file>
 </checkstyle>

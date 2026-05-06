@@ -25,8 +25,4 @@
 <error line="34" column="3" severity="error" message="&apos;method def&apos; 子元素缩进了2个缩进符，应为8个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="35" column="3" severity="error" message="&apos;method def rcurly&apos; 缩进了2个缩进符，应为4个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-builder/src/main/java/com/bootcamp/demo/App.java">
-</file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-builder/src/test/java/com/bootcamp/demo/AppTest.java">
-</file>
 </checkstyle>

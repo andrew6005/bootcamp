@@ -74,6 +74,4 @@
 <error line="6" column="3" severity="error" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="14" column="11" severity="error" message="禁止捕获： &apos;Exception&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
 </file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-maven/src/test/java/com/bootcamp/demo/AppTest.java">
-</file>
 </checkstyle>

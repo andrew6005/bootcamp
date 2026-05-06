@@ -131,8 +131,6 @@
 <error line="18" column="1" severity="error" message="&apos;}&apos; 后只应有一个空行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 <error line="22" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 </file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-thread/src/main/java/com/demo/App.java">
-</file>
 <file name="/Users/andrew/Documents/github/bootcamp/demo-thread/src/main/java/com/demo/HashTable.java">
 <error line="4" column="22" severity="error" message="“;”之前应该有一个空白行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 <error line="4" column="22" severity="error" message="禁止一行有多句代码。" source="com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"/>
@@ -165,7 +163,5 @@
 <error line="52" column="5" severity="error" message="“METHOD_DEF”之前应该有一个空白行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 <error line="52" column="22" severity="error" message="&apos;{&apos; 前应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="53" column="7" severity="error" message="&apos;method def&apos; 子元素缩进了6个缩进符，应为8个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="/Users/andrew/Documents/github/bootcamp/demo-thread/src/test/java/com/demo/AppTest.java">
 </file>
 </checkstyle>
